@@ -43,7 +43,7 @@ void decrypt_text(std::ifstream &brutekeys,std::ifstream &alpha,std::ifstream &s
 
     int choice {};
     //output file
-    std::ofstream brute_output {"../brute_log.txt"};
+    std::ofstream brute_output {"brute_log.txt"};
 
     //test files
     if(!brutekeys){
@@ -154,7 +154,7 @@ void read_text(std::ifstream &files,std::ifstream &alpha,std::ifstream &msg){
     std::string crypted_mes {""};
     std::string cme {""};
 
-    std::ofstream crypted_file {"../crypted.txt"};
+    std::ofstream crypted_file {"crypted.txt"};
 
     int choice {};
 
@@ -219,10 +219,10 @@ void read_text(std::ifstream &files,std::ifstream &alpha,std::ifstream &msg){
 
 int main(){
     
-    std::ifstream alphabet {"../alphabet.txt"};
-    std::ifstream keys{"../keys.txt"};
-    std::ifstream messages {"../messages.txt"};
-    std::ifstream cryptedfile {"../crypted.txt"};
+    std::ifstream alphabet {"alphabet.txt"};
+    std::ifstream keys{"keys.txt"};
+    std::ifstream messages {"messages.txt"};
+    std::ifstream cryptedfile {"crypted.txt"};
 
     std::string choice {""};
     
